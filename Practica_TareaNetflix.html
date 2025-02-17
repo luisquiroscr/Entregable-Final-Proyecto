@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Inicio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+    <!-- SCROOLL REVEAL JS LIBRARY CDN -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Inicio: Navbar  100% -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light" id="IdNav"> </nav>
+    <!-- Fin: Navbar  -->   
+    
+
+
+    <!-- Inicio: Container 90% -->
+    <div class="container">
+
+
+        <!-- Inicio: Header  -->
+        <header id="Header" class="mb-5 mt-5"></header>
+        <!-- Fin: Header  -->
+
+
+        <!-- Inicio: Main  -->
+        <main class="mt-5">
+           
+            <div class="container my-5">
+                <h1 class="text-center text-danger">Tarea: Temática de Netflix</h1>
+                <hr class="bg-danger">
+            
+                <!-- Ejercicio 1 -->
+                <div class="mb-4">
+                  <h2>1. Saludo de Bienvenida</h2>
+                  <button onclick="BienvenidaNetflix()" type="button" class="btn btn-danger">Ver Saludo</button>
+                </div>
+            
+                <!-- Ejercicio 2 -->
+                <div class="mb-4">
+                  <h2>2. Recomendación de Serie</h2>
+                  <button onclick="RecomendarSerie()" type="button" class="btn btn-warning">Recomendar una Serie</button>
+                  <button onclick="RecomendarSerie('The Witcher')" type="button" class="btn btn-secondary">Recomendar otra Serie</button>
+                </div>
+            
+                <!-- Ejercicio 3 -->
+                <div class="mb-4">
+                  <h2>3. Mostrar Perfil del Usuario</h2>
+                  <button onclick="MostrarPerfil('Jane Doe', 'jane.doe@example.com')" type="button" class="btn btn-primary">Mostrar Perfil</button>
+                </div>
+            
+                <!-- Ejercicio 4 -->
+                <div class="mb-4">
+                  <h2>4. Activar Modo Oscuro</h2>
+                  <button onclick="NetflixNightMode()" type="button" class="btn btn-dark">Activar Modo Oscuro</button>
+                </div>
+            
+                <!-- Ejercicio 5 -->
+                <div class="mb-4">
+                  <h2>5. Activar Modo Claro</h2>
+                  <button onclick="NetflixDayMode()" type="button" class="btn btn-light">Activar Modo Claro</button>
+                </div>
+            
+                <!-- Ejercicio 6 -->
+                <div class="mb-4">
+                  <h2>6. Calcular Tiempo de Maratón</h2>
+                  <button onclick="CalcularMaraton(3, 60)" type="button" class="btn btn-success">Calcular Tiempo</button>
+                </div>
+            
+                <!-- Ejercicio 7 -->
+                <div class="mb-4">
+                  <h2>7. Dividir Episodios en Días</h2>
+                  <button onclick="DividirEpisodios(12, 4)" type="button" class="btn btn-info">Dividir Episodios</button>
+                </div>
+            
+                <!-- Ejercicio 8 -->
+                <div class="mb-4">
+                  <h2>8. Crear Perfil de Usuario</h2>
+                  <form id="formCrearPerfil">
+                    <div class="form-group">
+                      <label for="nombreUsuario">Nombre</label>
+                      <input type="text" id="nombreUsuario" class="form-control" placeholder="Nombre del Usuario" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="emailUsuario">Correo Electrónico</label>
+                      <input type="email" id="emailUsuario" class="form-control" placeholder="Correo Electrónico" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="edadUsuario">Edad</label>
+                      <input type="number" id="edadUsuario" class="form-control" placeholder="Edad" min="1" required>
+                    </div>
+                    <button type="button" onclick="CrearPerfil()" class="btn btn-danger">Crear Perfil</button>
+                  </form>
+                </div>
+              </div>
+        </main>
+        <!-- Fin: Main  -->
+    </div>
+    <!-- Fin: Container  -->
+
+    <!-- Inicio: Footer  100% -->
+    <footer id="IdFooter" class="text-center mt-5">  </footer>
+    <!-- Fin: Footer  -->
+
+
+
+
+
+   
+
+    <!-- Scripts General  -->
+    <script type="module" src="JS/General/Nav.js"></script>
+    <script type="module" src="JS/General/Footer.js"></script>
+    <script type="module" src="JS/General/Header.js"></script>
+   
+   <!-- Scripts de la Pagina   -->
+    <script src="JS/PagesJS/Practica_TareaNetflix.js"></script>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
